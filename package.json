@@ -1,0 +1,35 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "Alkalmazások fejlesztése 2015/16/1 1. beadandó",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akooos/alkfejl_bead1.git"
+  },
+  "author": "Akos Toth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akooos/alkfejl_bead1/issues"
+  },
+  "homepage": "https://github.com/akooos/alkfejl_bead1#readme",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.14.1",
+    "connect-flash": "^0.1.1",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "express-validator": "^2.18.0",
+    "hbs": "^3.1.1",
+    "passport": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "sails-disk": "^0.10.8",
+    "waterline": "^0.10.26"
+  }
+}

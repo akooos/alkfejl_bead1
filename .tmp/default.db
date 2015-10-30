@@ -1,0 +1,117 @@
+{
+  "data": {
+    "recipes": [],
+    "users": [
+      {
+        "surname": "teszt",
+        "forename": "teszt",
+        "email": "teszt@b.c",
+        "username": "teszt",
+        "password": "$2a$10$xLXtinEcah7fzGrEd1ClAekoeaypz72myzCPBHbEPgry85emNSUVC",
+        "avatar": "http://teszt.com/blash",
+        "role": "recipeeditor",
+        "createdAt": "2015-10-30T21:19:04.296Z",
+        "updatedAt": "2015-10-30T21:19:04.296Z",
+        "id": 1
+      },
+      {
+        "surname": "1234",
+        "forename": "1234",
+        "email": "w1234@b.c",
+        "username": "1234",
+        "password": "$2a$10$PxOYS77y9B3dSMvQSsaOWOF3ZIua3sTe4sfkt2or2zBolkLKXbx7G",
+        "avatar": "http://teszt.com/blash",
+        "role": "recipeeditor",
+        "createdAt": "2015-10-30T21:25:31.900Z",
+        "updatedAt": "2015-10-30T21:25:31.900Z",
+        "id": 2
+      },
+      {
+        "surname": "t",
+        "forename": "t",
+        "email": "t@b.c",
+        "username": "t",
+        "password": "$2a$10$VsXNitwhNT7NdvRpOyK8EeFKdQ04vSOib/U9iso2UJ.PX3GT09tv2",
+        "avatar": "http://teszt.com/blashtttt",
+        "role": "recipeeditor",
+        "createdAt": "2015-10-30T21:28:17.697Z",
+        "updatedAt": "2015-10-30T21:28:17.697Z",
+        "id": 3
+      }
+    ]
+  },
+  "schema": {
+    "recipes": {
+      "name": {
+        "type": "string"
+      },
+      "headimg": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "user": {
+        "type": "integer",
+        "model": "users",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "users": {
+      "password": {
+        "type": "string"
+      },
+      "surname": {
+        "type": "string"
+      },
+      "forename": {
+        "type": "string"
+      },
+      "avatar": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      },
+      "role": {
+        "type": "string",
+        "enum": [
+          "recipeeditor",
+          "operator"
+        ],
+        "defaultsTo": "recipeeditor"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "recipes": {},
+    "users": {
+      "id": 3
+    }
+  }
+}
