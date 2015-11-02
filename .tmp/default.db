@@ -1,97 +1,7 @@
 {
   "data": {
-    "recipes": [
-      {
-        "name": "Krumplistészta",
-        "description": "Krumpli+tészta",
-        "headimg": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPJTi_OiWRawCqwghlsRPO3W2rESDCUo_OMZVdQ4aFol5kTizC",
-        "user": 2,
-        "createdAt": "2015-11-01T23:19:45.702Z",
-        "updatedAt": "2015-11-01T23:19:45.702Z",
-        "id": 1
-      },
-      {
-        "name": "Tejbegríz",
-        "description": "tej+gríz",
-        "headimg": "http://3.bp.blogspot.com/-ZlOLZyvSH40/TujmhTmQMCI/AAAAAAAAA3g/ESfy5pympE8/s1600/SAM_1758.JPG",
-        "user": 5,
-        "createdAt": "2015-11-02T00:29:36.952Z",
-        "updatedAt": "2015-11-02T00:29:36.952Z",
-        "id": 2
-      },
-      {
-        "name": "tejberizs",
-        "description": "Tej+rizs",
-        "headimg": "http://hamihami.hu/image.php?type=recipe&size=big&recipe=716",
-        "user": 5,
-        "createdAt": "2015-11-02T00:30:56.760Z",
-        "updatedAt": "2015-11-02T00:30:56.760Z",
-        "id": 3
-      }
-    ],
-    "users": [
-      {
-        "surname": "teszt",
-        "forename": "teszt",
-        "email": "teszt@b.c",
-        "username": "teszt",
-        "password": "$2a$10$xLXtinEcah7fzGrEd1ClAekoeaypz72myzCPBHbEPgry85emNSUVC",
-        "avatar": "http://teszt.com/blash",
-        "role": "recipeeditor",
-        "createdAt": "2015-10-30T21:19:04.296Z",
-        "updatedAt": "2015-10-30T21:19:04.296Z",
-        "id": 1
-      },
-      {
-        "surname": "123",
-        "forename": "1234",
-        "email": "w1234@b.c",
-        "username": "1234",
-        "password": "$2a$10$PxOYS77y9B3dSMvQSsaOWOF3ZIua3sTe4sfkt2or2zBolkLKXbx7G",
-        "avatar": "http://www.solstation.com/stars/earth3au.jpg",
-        "role": "recipeeditor",
-        "createdAt": "2015-10-30T21:25:31.900Z",
-        "updatedAt": "2015-11-01T18:43:17.563Z",
-        "id": 2,
-        "forname": "1234"
-      },
-      {
-        "surname": "t",
-        "forename": "t",
-        "email": "t@b.c",
-        "username": "t",
-        "password": "$2a$10$VsXNitwhNT7NdvRpOyK8EeFKdQ04vSOib/U9iso2UJ.PX3GT09tv2",
-        "avatar": "http://teszt.com/blashtttt",
-        "role": "recipeeditor",
-        "createdAt": "2015-10-30T21:28:17.697Z",
-        "updatedAt": "2015-10-30T21:28:17.697Z",
-        "id": 3
-      },
-      {
-        "surname": "te2",
-        "forename": "te2",
-        "email": "teszt@b.ca",
-        "username": "te",
-        "password": "$2a$10$YSa0Ju6qZB92g2mNllFtaON/HUa6VvU8/dJH3oxKbhTi.M/N1vHiG",
-        "avatar": "http://teszt.com/blash",
-        "role": "recipeeditor",
-        "createdAt": "2015-11-01T14:59:31.207Z",
-        "updatedAt": "2015-11-01T14:59:31.207Z",
-        "id": 4
-      },
-      {
-        "surname": "en",
-        "forename": "en",
-        "email": "en@g.c",
-        "username": "en",
-        "password": "$2a$10$/N5L2FACmlXwUd8fEFmz/Olp0YA/W8NMM1aBX0nTzojXXgP1crt66",
-        "avatar": "https://i.stack.imgur.com/Crlpe.png?s=328&g=1",
-        "role": "recipeeditor",
-        "createdAt": "2015-11-02T00:28:55.472Z",
-        "updatedAt": "2015-11-02T00:28:55.472Z",
-        "id": 5
-      }
-    ]
+    "recipes": [],
+    "users": []
   },
   "schema": {
     "recipes": {
@@ -167,7 +77,7 @@
   },
   "counters": {
     "recipes": {
-      "id": 3
+      "id": 6
     },
     "users": {
       "id": 5
