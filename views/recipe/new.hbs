@@ -1,8 +1,8 @@
 <div class="page-header">
     <h1>Új recept</h1>
 </div>
-{{#each errorMessages}}
-<div class="alert alert-dismissible alert-danger">
+{{#each messages}}
+<div class="alert alert-dismissible alert-info">
     <button type="button" class="close" data-dismiss="alert">×</button>
     {{this}}
 </div>
@@ -10,21 +10,21 @@
 <form class="form-horizontal" method="post">
     <fieldset>
         <div class="form-group">
-            <label for="rcpname" class="col-lg-2 control-label">Név</label>
+            <label for="name" class="col-lg-2 control-label">Név</label>
             <div class="col-lg-10">
-                <input class="form-control" type="text" id="rcpname" name="rcpname" >
+                <input class="form-control" type="text" id="name" name="name" >
             </div>
         </div>
         <div class="form-group">
-            <label for="rcpimgurl" class="col-lg-2 control-label">Kép URL</label>
+            <label for="headimg" class="col-lg-2 control-label">Kép URL</label>
             <div class="col-lg-10">
-                <input class="form-control" type="text" id="rcpimgurl" name="rcpimgurl"  >
+                <input class="form-control" type="text" id="headimg" name="headimg"  >
             </div>
         </div>
         <div class="form-group">
-        <label for="rcpdesc" class="col-lg-2 control-label">Leírás</label>
+        <label for="desc" class="col-lg-2 control-label">Leírás</label>
             <div class="col-lg-10">
-                <textarea class="form-control" id="rcpdesc" name="rcpdesc"  ></textarea>
+                <textarea class="form-control" id="desc" name="desc"  ></textarea>
             </div>
         </div>        
         <div class="form-group">

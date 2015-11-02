@@ -10,7 +10,22 @@ function IndexController(){
 
         router.get('/', function (req, res) {
             console.log('IndexController:: Rendering list...');
-            res.render('index');
+            
+            req.app.models.recipes.find().sort({'cre_dt':'desc','upd_dt':'desc'}).then(
+                function (recipes) {
+                //megjelenítés
+                res.render(
+                            'index', 
+                            { recipes: recipes,
+                              messages: req.flash('info')
+                            }
+                           );
+                }
+            ).catch(function (err) {
+                                    console.log("ERROR Query:"+err);
+                                   
+                    });
+            
         });
         router.get('/about', function (req, res) {
             console.log('IndexController:: Rendering about...');

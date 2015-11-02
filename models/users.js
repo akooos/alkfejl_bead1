@@ -3,6 +3,11 @@ module.exports = {
     identity: 'users',
     connection: 'default',
     attributes: {
+        username: {
+            type: 'string',
+            required: true,
+            unique:true
+        },
         password: {
             type: 'string',
             required: true,

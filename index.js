@@ -32,12 +32,11 @@ app.use(session({
 }));
 app.use(flash());
 
-app.use('/recipes',ctrlLogin.ensureAuthenticated);
+
 
 ctrlLogin.init(app,express);
-ctrlRecipes.init(app,express);
+ctrlRecipes.init(app,express,ctrlLogin.ensureAuthenticated);
 ctrlIndex.init(app,express);
-
 
 
 // ORM indítása

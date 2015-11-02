@@ -1,25 +1,153 @@
 
 function RecipesController(){
 
-        this.init = function(app,express){
+        this.init = function(app,express, godoo){
            
             var router = express.Router();
             initRoutes(router);
             initActions(router);
+            app.use('/recipes',godoo,router);
             console.log('RecipesController::init() DONE.');
         }
 
         function initActions(router){
             
+            router.post(  '/edit',
+                        function (req, res) {
+                     /*       // adatok ellenőrzése
+                            req.checkBody('email', 'Hibás az email!!').notEmpty().withMessage('Kötelező megadni!');
+                            
+                            //HIBA->    req.checkBody('email', 'Hibás email!').isEmail().withMessage('Email-t kötelező megadni! ');
+                            
+        
+                            var validationErrors = req.validationErrors(true);
+                            console.log('ValidationERRORS: '+validationErrors);
+                            
+                            if (validationErrors) {
+                                req.flash('validationErrors', validationErrors);
+                            } else {
+                                        var uid = res.locals.user.id;
+                                        req.app.models.users.update(
+                                            { id:uid },
+                                            {
+                                                forename:  req.body.forename,
+                                                surname: req.body.surname,
+                                                avatar: req.body.avatar,
+                                                email : req.body.email
+                                            }
+                                        ).then(function (oi) {
+                                            //siker
+                                            req.session.passport.user.forename = req.body.forename;
+                                            req.session.passport.user.surname = req.body.surname;
+                                            req.session.passport.user.avatar = req.body.avatar;
+                                            req.session.passport.user.email = req.body.email;
+                                            req.session.save();
+                                        }).catch(function (err) {
+                                            //hiba
+                                            req.flash('msgs', err.toString());
+                                            console.log('USerEdit error '+err);
+                                        });
+                                         
+                                            
+                                        
+                                }
+                            res.redirect('/user/edit');*/
+                        }
+            );
+            
+            router.post(  '/new',
+                        function (req, res) {
+                            // adatok ellenőrzése
+                       //    req.checkBody('email', 'Hibás az email!!').notEmpty().withMessage('Kötelező megadni!');
+                            
+                            //HIBA->    req.checkBody('email', 'Hibás email!').isEmail().withMessage('Email-t kötelező megadni! ');
+                            
+        
+                            var validationErrors = req.validationErrors(true);
+                            console.log('ValidationERRORS: '+validationErrors);
+                            
+                            if (validationErrors) {
+                                req.flash('validationErrors', validationErrors);
+                            } else {
+                                        var uid = req.session.passport.user.id;
+                                        req.app.models.recipes.create(
+                                            {
+                                                name:  req.body.name,
+                                                description: req.body.desc,
+                                                headimg: req.body.headimg,
+                                                user:uid
+                                            }
+                                        ).then(function (oi) {
+                                            //siker
+                                            console.log(oi);
+                                            res.redirect('/recipes/list');
+                                        }).catch(function (err) {
+                                            //hiba
+                                            req.flash('msgs', err.toString());
+                                            console.log('USerEdit error '+err);
+                                            res.redirect('/recipes/new');
+                                        });
+                                         
+                                            
+                                        
+                                }
+                            
+                        }
+            );
         }
 
         function initRoutes(router){  
             
-            
             var rndList = function (req, res) {
-                        console.log("Rendering recipe list.");
-                        res.render('recipe/list',{
-            recipes: [{
+                console.log("Rendering recipe list.");
+                
+                 var uid = req.session.passport.user.id;
+                /*req.app.models.users.findOne( { id:uid }).populate('recipes').exec(function(err, users) {
+                
+                    if(err) // handle error
+                    {
+                        console.log('Error: ' + err);
+                    } else
+                        {
+                            console.log(users);
+                        }
+                });
+                */
+                req.app.models.recipes.find({'user':uid}).sort({'cre_dt':'desc','upd_dt':'desc'}).then(function (recipes) {
+                    
+                    res.render('recipe/list',{'messages':req.flash('msgs'),'recipes':recipes } );
+                }).catch(function (err) {
+                    //hiba
+                    req.flash('msgs', err.toString());
+                        res.render('recipe/list',{'messages':req.flash('msgs') } );
+                    console.log('USerEdit error '+err);
+                });
+                
+                
+            };
+            
+            router.get('/', rndList );
+            router.get('/list', rndList );
+        router.get('/new', function (req, res) {
+            console.log("Rendering recipe new.");
+            res.render('recipe/new', {  
+                        'messages':req.flash('msgs')
+                    });
+        });
+        router.get('/edit', function (req, res) {
+            console.log("Rendering recipe edit.");
+            res.render('recipe/edit', {  
+                        'messages':req.flash('msgs')
+                    });
+        });
+    } 
+    
+}
+module.exports= new RecipesController();
+
+/*
+
+recipes: [{
             rcpname:"Teszt recept 1",
             rcpdesc: "------leírás.....1",
             rcpimgurl:"http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
@@ -66,20 +194,5 @@ function RecipesController(){
                     
                     
                     ]
-            });
-            };
-            
-            router.get('/', rndList );
-            router.get('/list', rndList );
-        router.get('/new', function (req, res) {
-            console.log("Rendering recipe new.");
-            res.render('recipe/new');
-        });
-        router.get('/edit', function (req, res) {
-            console.log("Rendering recipe edit.");
-            res.render('recipe/edit');
-        });
-    } 
-    
-}
-module.exports= new RecipesController();
+
+*/
