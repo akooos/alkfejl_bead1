@@ -1,7 +1,111 @@
 {
   "data": {
-    "recipes": [],
-    "users": []
+    "recipes": [
+      {
+        "name": "Tejberizs",
+        "description": "Tej+rizs",
+        "headimg": "http://www.mindmegette.hu/images/15/O/23308_tejberizs-fahejjal_n-201510170530.jpg",
+        "user": 7,
+        "createdAt": "2015-11-02T20:33:29.464Z",
+        "updatedAt": "2015-11-02T20:33:29.464Z",
+        "id": 7
+      },
+      {
+        "name": "Tejbegríz",
+        "description": "Tej+gríz",
+        "headimg": "http://www.recepttar.hu/recept-img/3000/3158_tejbegriz_klasszik.jpg",
+        "user": 7,
+        "createdAt": "2015-11-02T20:34:06.385Z",
+        "updatedAt": "2015-11-02T20:34:06.385Z",
+        "id": 8
+      },
+      {
+        "name": "AMARANT",
+        "description": "Az AMARANT\r\n\r\nAz amarant-félék több fajtája már Kolumbusz előtt őshazájában (az Andok trópusi magasföldi völgyeiben) a kukoricával egyenértékű kenyérgabona volt. Az apró magból készült kenyér kissé tömörebb és édeskésebb ízű, mint a búzakenyér. A disznóparéjfélék családjába tartozó növénynek kb. háromezer fajtája van. Ma már nemcsak az inkák termesztik és nemcsak táplálkozási célokból, hanem szemetgyönyörködtető dísznövényként is szerte a világban. Afrikában pl. levélnövényként fogyasztják, Belső-Mongóliában (Kína legszárazabb vidéke) kenyérgabona és zöldtakarmány. Érdekessége ezen a vidéken, hogy lefagyásig folytonosan nő, sőt aratás után hirtelen megugrik, s egyre sűrűsödik. Sokoldalúságára jellemző, hogy egyik variációja a nálunk kakastaréj néven ismert kedvelt dísznövény. Bárhol eredményesen termeszthető, mert rendkívül szívós és ellenálló.\r\n\r\nAz amarant magja és lisztje rost-, kalcium-, vas-, vitamin- és fehérje-tartalom tekintetében felülmúlja a hagyományos gabonaféléket. Az amarant-fehérje különösen gazdag LIZIN-ben, amely összetevő a gabonafélékből és a kukoricából nagymértékben hiányzik. Az amarant- és a búza-liszt keverékében viszont a fehérje összetétel majdnem ideális. Az ilyen keverékből készült élelmiszerek élettani és beltartalmi jellemzői kiemelkedően jók (egy majdnem teljes aminosav-választékot kapunk), és az egészséges táplálkozás követelményeit sokkal jobban kielégítik, mint a hagyományos termékek.\r\n\r\nA mag főzve, pirítva, csíra-zöldségként, lisztje a búzaliszt helyett, ill. azzal keverve mindenféle ételben használható. A mag hő hatására kipattog mint a pattogatott kukorica, s így közvetlenül is fogyasztható. Felhasználható müzli-keverékekben, süteményekben, édességekben is. Igen jóízű és sokáig friss kenyér készül az ilyen kevert lisztből.\r\n\r\nA mag lapított gömb vagy lencse alakú, színét a maghéj külső rétegében elhelyezkedő festékanyag adja, lehet: csontfehér, sárga, barna, rózsaszín, vörös vagy fekete. Örleménye hasonló a búzaliszthez, de inkább szürkés színű, enyhén olajos tapintású. Sütésnél a búzalisztet 10-15%-ban (lehet 1/5-öd) helyettesíthetjük ezzel a közönséges amarant-liszttel. A mag különlegessége, hogy nincs benne glutén, azaz sikér, de több fehérjét, telítetlen zsírsavakból álló olajat, rostot és hamut tartalmaz mint a gabonafélék, és a B1- és B2-vitaminok mellett C-vitamint is. Teljes kiőrlés esetén 5-ször annyi vasat, kétszer több fehérjét tartalmaz, mint a búzaliszt. A szokásos őrléssel (korpa nélkül) készült amarant lisztben 10-szer több vas, 7-szer több kalcium és 4-szer több cink található, mint a közönséges búzalisztben.\r\n\r\nMindezen tulajdonságokkal könnyen lehet, hogy a XXI. Század kenyérgabonája lesz!?\r\n\r\nKenyérként még nem kóstoltuk, de a belőle készült tészta elismerést érdemel. Műtrágya és vegyszermentesen termelt durumbúzából és amarantmagból készül, kőmalomban teljeskiőrléssel. Tojást nem tartalmaz. Kalcium, vas és foszforban gazdagabb, mint a búzából készült tészták. \"Az élelmirost-tartalma alapján a tészta az élelmi rostban gazdag különleges táplálkozási igényt kielégítő élelmiszerek csoportjába sorolható.\" (OÉTI 1096/96)\r\n\r\nAmarantos tészta készítése:\r\n\r\nForrásban lévő vízbe kevés tengeri sót teszünk, pici olajat, majd beleöntjük a tésztát. Újraforrás után a metélt-, gyufa- és kocka esetén 1-1,5 percig, orsó-, kagyló- és cső esetén 2-2,5 percig főzzük, majd lezárva, fedő alatt 5 percig állni hagyjuk. Leszűrjük, öblítjük és tetszés szerint ízesítjük. (1 csomag tészta főzéséhez kb. 1 liter víz szükséges.)\r\n\r\nAMARANTOS RECEPTEK\r\n\r\nAmarantos leves\r\n\r\nHozzávalók: \r\n10 dkg amarant \r\n2 sárgarépa \r\n2 fehérrépa \r\n1 zeller \r\n2-3 burgonya \r\n1 közepes fej vöröshagyma \r\nAz amarant magot lassú tűzön, kevés olajon megpirítjuk, hozzáadunk 1 répát, 1 zöldséget, 1/2 zellert, pirospaprikát, beledaraboljuk a vöröshagymát és felöntjük vízzel. Kb. 30 percig főzzük. A maradék alapanyagot lereszeljük, hozzáadjuk a kész leveshez és tálalásig lefedve hagyjuk.\r\n\r\nAmarantos paprikásburgonya\r\n\r\nElkészítése hasonló a hagyományos paprikásburgonyához, de amikor félig kész, beledobunk fél marék amarant magot és így főzzük tovább. Variációként tálaláskor díszíthetjük apróra daradolt sajtkockákkal, tejföllel.\r\n\r\nAmarantos töltöttkáposzta\r\n\r\nElkészítése mint hagyományosan, csak szója helyett amarant magot teszünk bele.\r\n\r\nAmarantos tarhonya\r\n\r\nHozzávalók: \r\n5-10 dkg amarant mag \r\n10-15 dkg tarhonya \r\n3-4 burgonya \r\n1 fej vöröshagyma \r\npirospaprika \r\nsó \r\nízlés szerint zöldpaprika \r\nparadicsom \r\nA tarhonyát szárazon megpirítjuk, majd a félig megfőtt hagymához és burgonyához keverjük. Meghintjük pirospaprikával, hozzáadjuk az amarant magot, paprikát, paradicsomot, ízesítjük, majd puhára főzzük (ízlés szerinti mennyiségű vízzel).\r\n\r\nInkák ősi eledele\r\n\r\n10 dkg amarant magot lassú tűzön kipattogtatunk (egyszerre csak keveset, állandóan rázogatva) -így is fogyasztható-, majd mézzel keverve kis gombócokat formázunk, s így csemegézünk.\r\n\r\nTovábbi információ és beszerzési lehetőség: \r\nMatúz Béla \r\n6060 Tiszakécske, Dózsa Gy. út 15. \r\nTel.: 06 76 442 865",
+        "headimg": "http://www.vegetarianus.hu/kepek/amakl.jpg",
+        "user": 8,
+        "createdAt": "2015-11-02T20:37:51.606Z",
+        "updatedAt": "2015-11-02T20:37:51.606Z",
+        "id": 9
+      },
+      {
+        "name": "Bográcsban főtt vörösboros csülökpörkölt recept",
+        "description": "Bográcsban főtt vörösboros csülökpörkölt recept\r\n\r\n2.4 kg sertéscsülök (kicsontozva)\r\n4 ek disznózsír\r\n2.5 közepes db vöröshagyma (apróra vágva)\r\n2 teáskanál fűszerpaprika\r\n6 gerezd fokhagyma (apróra vágva)\r\nsó ízlés szerint\r\nőrölt fűszerkömény ízlés szerint\r\nfekete bors ízlés szerint\r\nmajoranna ízlés szerint\r\n1 közepes db tv paprika (félbevágva)\r\n2 közepes db paradicsom (meghámozva és négyfelé vágva)\r\nételízesítő ízlés szerint\r\n2.5 dl száraz vörösbor\r\n4 dl víz\r\nA tálaláshoz\r\n2 kg burgonya\r\n5 db csemegeuborka\r\n\r\nVöröshagymát apróra vágjuk, és a zsíron üvegesre pároljuk. A tűzről levesszük addig, amíg a kockákra vágott húst beletesszük. Visszarakjuk a tűzre, és gyakran kevergetve addig pirítjuk, amíg a hús ki nem fehéredik, majd felöntjük egy kis vízzel.\r\nA paprikát, paradicsomot, fokhagymát és a fűszereket ízlés szerint beletesszük, és lassú tűznél -néha egy kevés vizet aláöntve- puhára főzzük. Közben a vörösbort beleöntjük és készre főzzük, ügyelve, hogy nehogy oda égjen a bogrács aljába.\r\nAmikor ez kész, a hasábokra vágott burgonyával tálaljuk, és mellé csemegeuborkával.\r\nköltség: 3000 Ft",
+        "headimg": "http://www.nosalty.hu/files/imagecache/recept-v/recept_kepek/bogracsban-fott-vorosboros-csulokporkolt.jpg",
+        "user": 6,
+        "createdAt": "2015-11-02T20:41:34.735Z",
+        "updatedAt": "2015-11-02T20:41:34.735Z",
+        "id": 10
+      },
+      {
+        "name": "Bajai halászlé",
+        "description": "hozzávalók / 5 adag\r\n\r\n1.5 kg ponty\r\n60 dkg pontyfej (4 nagyobb fej)\r\n4 ek fűszerpaprika (púpozott)\r\n1.5 l víz\r\ncsípős fűszerpaprika ízlés szerint\r\n1 db halászlékocka\r\n500 g tészta (halászlé)\r\n\r\nVöröshagymát apróra vágjuk. Felteszük főni annyi vízben, hogy ellepje. \r\nHa megpuhult a hagyma, akkor belerakjuk a halat, és annyi vizet teszünk hozzá, hogy az egészet ellepje.\r\nLassan felforraljuk. Mikor már forr, belekerül a pirospaprika, hahászlékocka. Elfőzzük a pirospaprikát benne.\r\nA forrástol számítva fél óra múlva mehet bele az erős paprika, és ha van, tej vagy ikra. 10 percig főzzük még.\r\nA tésztát kifőzzük, és tálalhatunk.\r\n",
+        "headimg": "http://www.nosalty.hu/files/imagecache/recept-v/recept_kepek/bajai-halaszle-backerman-konyhajabol.jpg",
+        "user": 9,
+        "createdAt": "2015-11-02T21:26:24.200Z",
+        "updatedAt": "2015-11-02T21:26:24.200Z",
+        "id": 13
+      },
+      {
+        "name": "Pega Viola",
+        "description": "lalalala",
+        "headimg": "",
+        "user": 6,
+        "createdAt": "2015-11-03T12:11:28.963Z",
+        "updatedAt": "2015-11-03T12:12:31.883Z",
+        "id": 17
+      }
+    ],
+    "users": [
+      {
+        "surname": "admin",
+        "forename": "admin",
+        "email": "admin@b.com",
+        "username": "admin",
+        "password": "$2a$10$qpai9L8YFa4OkY8PkXnVd.kQFZSidhw/gihx/ZEgcBFBXe7Bq9nzC",
+        "avatar": "http://cdn.wccftech.com/wp-content/uploads/2015/04/mario-2.png",
+        "role": "operator",
+        "createdAt": "2015-11-02T20:22:52.591Z",
+        "updatedAt": "2015-11-03T11:36:48.348Z",
+        "id": 6
+      },
+      {
+        "surname": "Test",
+        "forename": "Ervin",
+        "email": "test.ervin@b",
+        "username": "test",
+        "password": "$2a$10$VHsGqS.QF/hEwVZcojpTU.94dmaLcgFqLyuDxGUG96nPrt10xJpbi",
+        "avatar": "http://gracelutheran.com/wp-content/uploads/2012/12/puppy-dog-cartoon.jpg",
+        "role": "recipeeditor",
+        "createdAt": "2015-11-02T20:32:44.285Z",
+        "updatedAt": "2015-11-02T21:47:44.595Z",
+        "id": 7
+      },
+      {
+        "surname": "Földi",
+        "forename": "Ágika",
+        "email": "agi@g.c",
+        "username": "agika",
+        "password": "$2a$10$wV0rush3z9Xzh8jfigngT.moceTeD5qCYzKhq63MjxQqYeyaKFKuu",
+        "avatar": "http://exchangedownloads.smarttech.com/public/content/41/41884408-a0c8-480d-8247-183ffd5314e6/previews/medium/0001.png",
+        "role": "recipeeditor",
+        "createdAt": "2015-11-02T20:36:13.579Z",
+        "updatedAt": "2015-11-02T20:36:13.579Z",
+        "id": 8
+      },
+      {
+        "surname": "Vicces",
+        "forename": "Troll",
+        "email": "troll@mordor.org",
+        "username": "troll",
+        "password": "$2a$10$LqM4yAdaW8uX1mollf68DeJu5waeXsqAuHSeHS355xKWTEo.xeWEa",
+        "avatar": "http://static1.squarespace.com/static/507dba43c4aabcfd2216a447/t/5244609de4b0d08691bdc2ee/1380212895097/Troll+Face.jpg",
+        "role": "recipeeditor",
+        "createdAt": "2015-11-02T20:39:47.426Z",
+        "updatedAt": "2015-11-02T20:39:47.426Z",
+        "id": 9
+      }
+    ]
   },
   "schema": {
     "recipes": {
@@ -77,10 +181,10 @@
   },
   "counters": {
     "recipes": {
-      "id": 6
+      "id": 17
     },
     "users": {
-      "id": 5
+      "id": 15
     }
   }
 }
