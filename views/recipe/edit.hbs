@@ -9,22 +9,28 @@
 {{/each}}
 <form class="form-horizontal" method="post">
     <fieldset>
-        <div class="form-group">
-            <label for="rcpname" class="col-lg-2 control-label">Név</label>
+        <div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
+        <label for="name" class="col-lg-2 control-label">Név</label>
             <div class="col-lg-10">
-                <input class="form-control" type="text" id="rcpname" name="rcpname" value="{{rcpname}}">
+                <input class="form-control" type="text" id="name" name="name" value="{{recipe.name}}">
+                {{#if validationErrors.name}}
+                    <span class="help-block">{{validationErrors.name.msg}}</span>
+                {{/if}}
             </div>
         </div>
         <div class="form-group">
-            <label for="rcpimgurl" class="col-lg-2 control-label">Kép URL</label>
+            <label for="headimg" class="col-lg-2 control-label">Kép URL</label>
             <div class="col-lg-10">
-                <input class="form-control" type="text" id="rcpimgurl" name="rcpimgurl" value="{{rcpimgurl}}" >
+                <input class="form-control" type="text" id="headimg" name="headimg" value="{{recipe.headimg}}" >
             </div>
         </div>
-        <div class="form-group">
-        <label for="rcpdesc" class="col-lg-2 control-label">Leírás</label>
+        <div class="form-group {{#if validationErrors.description}}has-error{{/if}}">
+        <label for="description" class="col-lg-2 control-label">Leírás</label>
             <div class="col-lg-10">
-                <textarea class="form-control" type="text" id="rcpdesc" name="rcpdesc" >{{rcpdesc}}</textarea>
+                <textarea class="form-control"  style="height:200px;" type="text" id="description" name="description" >{{recipe.description}}</textarea>
+                  {{#if validationErrors.description}}
+                    <span class="help-block">{{validationErrors.description.msg}}</span>
+                  {{/if}}
             </div>
         </div>        
         <div class="form-group">
@@ -33,5 +39,6 @@
                 <button type="submit" class="btn btn-primary">Küldés</button>
             </div>
         </div>
+        <input type="hidden" name="id" value="{{recipe.id}}">
     </fieldset>
 </form>

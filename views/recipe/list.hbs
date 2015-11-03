@@ -11,7 +11,9 @@
 
 <ul class="list-group">
     {{#each recipes}}
-    <li class="list-group-item">
+    <li recipe="{{id}}" class="list-group-item">
+        <a href="/recipes/edit?id={{id}}"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Szerkesztés</a>
+        <a href="/recipes/del?id={{id}}"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Törlés</a>
         <div style="float:right; height:100px; width:100px">
        <img style="float:right;   height: 100%;
    width: 100%;" src="{{headimg}}" /></div>
@@ -20,7 +22,5 @@
     </li>
     {{/each}}
 </ul>
-
-
 
 <p><a href="/recipes/new" class="btn btn-default">Új recept felvétele</a></p>

@@ -5,8 +5,8 @@
 - Vendégként recepteket megtekinteni.
 - Felhasználóként(Receptszerkesztő) szeretnék recepteket megosztani másokkal: Recept hozzáadás
 - Felhasználóként szeretnék módosítani a receptjeimen: Recept módosítás
-- Felhasználóként kommenteket hozzáfűzni a receptekhez.
-- Operátorként szeretném a kommenteket törölni, ha szükséges.
+- Felhasználóként szeretnék recepteimből törölni.
+- Operátorként szeretném a felhasználókat törölni, ha szükséges.
 
 ## Nem funkcionális követelmények
 
@@ -16,9 +16,9 @@
 
 ## Használatieset-modell
 
--  Vendég: A főoldal tartalmához hozzáfér, receptet megosztani nem tud.
--  Receptszerkesztő: Vengég szerepkörén túl, receptet is megoszthat.
--  Operátor: Receptszerkesztő szerepkörén túl, törölheti bárki megjegyzését, receptét.
+-  Vendég: A főoldal tartalmához hozzáfér, receptet írni nem tud.
+-  Receptszerkesztő: Vengég szerepkörén túl, receptet is írhat.
+-  Operátor: Receptszerkesztő szerepkörén túl, törölheti bárkit.
 
 ## Használati eset diagramok:
 
@@ -34,36 +34,40 @@
 
 Publikus:
 
-- Főoldal
-- Help
-- Login
+- Főoldal(összes recept)
+- Súgó
+- Bejelentkező felület
+- Regisztrációs felület
+ 
+Recept szerkesztő:
 
-Bejelentő
-
-- Főoldal
-- Help
-- Login/Logout
 - Receptek
     + új recept
-    + recept megtekintése
-        * megjegyzés hozzáfűzése
-
-Operátor
+    + (saját)recept szerkesztése
+    + (saját)recept törlése
+        
+Operátor:
+    + felhasználók listázása
+    + felhasználók törlése
 
 ### Végpontok
 
-GET /: főoldal
-GET /help: leírás a használatról
-GET /login: bejelentkező oldal
-POST /login: bejelentkezési adatok felküldése
-GET /recepies/list: saját hibalista oldal
-GET /recepies/new: új hiba felvitele
-POST /recepies/new: új hiba felvitele, adatok küldése
-GET /recepies/:id: hiba adatai
+GET /: főoldal: receptek listája
+GET /about: leírás a használatról
+GET /user/signin: bejelentkező oldal
+POST /user/signin: bejelentkezési adatok felküldése
+GET /user/signup: regisztrációs oldal
+POST /user/signup: regisztrációs adatok felküldése
+GET /user/edit/:id: felhasználói felület,felhasználó szerkesztése
+GET /recipes/list: saját receptek oldala
+GET /recipes/new: új recept felvitele
+POST /recipes/new: új recept felvitele, adatok küldése
+GET /recipes/edit/:id recept adatai szerkesztése
+GET /recipes/del/:id recept adatai törlése
 POST /recepies/:id/comment: új megjegyzés
-GET /operator/list: operátor felület, hibalista
-GET /operator/errors/:id: operátor felület,
-POST /operator/errors/:id/status: 
+GET /user/list: operátor felület, felhasználó lista
+GET /user/del/:id: operátor felület,felhasználó törlése
+
 
 ## Felhasználóifelület-modell
 

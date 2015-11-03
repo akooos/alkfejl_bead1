@@ -6,10 +6,20 @@
 <ul class="list-group">
     {{#each recipes}}
     <li class="list-group-item">
+          {{#if ../loggedIn}}
+          
+              {{#if_currentuser user}}
+              <a href="/recipes/edit?id={{id}}"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Szerkesztés</a>
+                <a href="/recipes/del?id={{id}}"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Törlés</a>
+              {{else}}
+              
+              {{/if_currentuser}}
+              
+          {{/if}}
         <div style="float:right; height:100px; width:100px">
        <img style="float:right;   height: 100%;
    width: 100%;" src="{{headimg}}" /></div>
-       <h2> {{name}} </h2>
+       <h2> {{name}}</h2>
        <p> {{description}} </p>
     </li>
     {{/each}}

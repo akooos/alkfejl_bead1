@@ -4,7 +4,7 @@ module.exports = {
     attributes: {
         name: {
             type: 'string',
-            required: true,
+            required: true
         },
         headimg:{
             type: 'string',
@@ -12,7 +12,7 @@ module.exports = {
         },
         description: {
             type: 'string',
-            required: true,
+            required: true
         },
         user: {
             model: 'users'
