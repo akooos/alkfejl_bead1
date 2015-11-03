@@ -69,8 +69,8 @@ var hbs = require('hbs');
     // Start Server
     var port = process.env.PORT || 3000;
     app.listen(port, function () {
-        console.log('Server is started.');
+        console.log('Server has started successfully!');
     });
     
-    console.log("ORM is started.");
+    console.log("ORM has been initialized successfully!");
 });

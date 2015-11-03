@@ -47,8 +47,9 @@ function LoginController(){
                     console.log('LoginController: Rendering signin');
                     
                      var msgs = ( req.flash('msgs')  || [{}]).pop();
-                    
-                    res.render('login/signin', { messages: msgs } );
+                     if ( msgs == undefined )
+                      msgs = req.flash('error');
+                    res.render('login/signin', { 'messages': msgs } );
                 } else
                     res.redirect('/');
             }
@@ -60,7 +61,7 @@ function LoginController(){
                      var ve =  ( req.flash('validationErrors')  || [{}]).pop();
                      var msgs = ( req.flash('msgs')  || [{}]).pop();
                     
-                    res.render('login/signup', { messages: msgs , validationErrors: ve } );
+                    res.render('login/signup', { 'messages': msgs, validationErrors: ve } );
                 } else
                     res.redirect('/');
             });
@@ -132,7 +133,7 @@ function LoginController(){
                 console.log('SERIALIZE');
                // console.log(user);
                 done(null, user );
-                console.log('-------------' + ( new Date() ));
+                console.log('END-------------' + ( new Date() ));
             });
     
             //Visszaállítás a munkamenetből
@@ -141,7 +142,7 @@ function LoginController(){
                // console.log(obj);
                 done(null, obj);
                 user = obj;
-                console.log('-------------' + ( new Date() ));
+                console.log('END-------------' + ( new Date() ));
             });      
             
             var LocalStrategy = require('passport-local').Strategy;
@@ -163,14 +164,14 @@ function LoginController(){
                                 }
                                 if (user) {
                                     console.log('Létező felhasználó');
-                                    return done(null, false, { message: 'Létező felhasználó.' });
+                                    return done(null, false, { messages: ['Létező felhasználó.'] });
                                 }
                                 req.app.models.users.create(req.body).then(function (user) {
                                     console.log(user);
                                     return done(null, user);
                                 }).catch(function (err) {
                                     console.log("Local-signup-ERROR "+err);
-                                    return done(null, false, { message: err.details });
+                                    return done(null, false, { msgs: err.details });
                                 })
                             });
                         }
@@ -184,6 +185,7 @@ function LoginController(){
                         usernameField: 'username',
                         passwordField: 'password',
                         passReqToCallback: true,
+                        badRequestMessage:  'Hiányzó adatok'
                     },
                     function(req, username, password, done) {
                             console.log('SIGIN::USERNAME='+username);
@@ -194,8 +196,9 @@ function LoginController(){
                                 return done(err); 
                             }
                             if (!user || !user.validPassword(password)) {
-                                console.log('Helytelen adatok.')
-                            return done(null, false, { message: 'Helytelen adatok.' });
+                                console.log('Auth:Helytelen adatok.');
+                                req.flash('msgs','Helytelen adatok.');
+                            return done(null, false,'Helytelen adatok.');
                         }
                         console.log(user);
                     return done(null, user);

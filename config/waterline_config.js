@@ -1,10 +1,12 @@
 
+var memoryAdapter = require('sails-memory');
 var diskAdapter = require('sails-disk');
 
 // ORM - konfiguráció
 var config = {
     adapters: {
         disk:       diskAdapter,
+        memory:     memoryAdapter
     },
     connections: {
         default: {
@@ -12,6 +14,9 @@ var config = {
         },
         disk: {
             adapter: 'disk'
+        },
+        memory: {
+            adapter: 'memory'
         }
     },
     defaults: {
