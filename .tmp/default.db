@@ -47,12 +47,12 @@
         "id": 13
       },
       {
-        "name": "Pega Viola",
+        "name": "Pega Viola me cantar",
         "description": "lalalala",
         "headimg": "",
         "user": 6,
         "createdAt": "2015-11-03T12:11:28.963Z",
-        "updatedAt": "2015-11-03T12:12:31.883Z",
+        "updatedAt": "2015-11-07T14:00:44.020Z",
         "id": 17
       }
     ],
@@ -104,6 +104,18 @@
         "createdAt": "2015-11-02T20:39:47.426Z",
         "updatedAt": "2015-11-02T20:39:47.426Z",
         "id": 9
+      },
+      {
+        "surname": "xyzw",
+        "forename": "xyzw",
+        "email": "xyzw@xyzw.com",
+        "username": "xyzw",
+        "password": "$2a$10$.98iZQpnut96zITBld0l7.6iJrpdkzxrYCChdcfw/Y82SRWz1e/rS",
+        "avatar": "",
+        "role": "recipeeditor",
+        "createdAt": "2015-11-07T22:35:48.072Z",
+        "updatedAt": "2015-11-07T22:35:48.072Z",
+        "id": 16
       }
     ]
   },
@@ -184,7 +196,7 @@
       "id": 17
     },
     "users": {
-      "id": 15
+      "id": 16
     }
   }
 }

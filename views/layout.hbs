@@ -61,12 +61,12 @@
                         {{#if loggedIn}}
                         <li><a href="/">Receptek</a></li>    
                         <li><a href="/recipes/list">Receptjeim</a></li>                        
-                        <li><a href="/recipes/new">Új recept</a></li>    
+                        <li><a id="linkNewRecipe" href="/recipes/new">Új recept</a></li>    
                         <li><a href="/user/edit">Adataim</a></li>
                         {{#if isOperator}}
                         <li><a href="/user/list">Felhasználók</a></li>                        
                         {{/if}}
-                        <li><a href="/user/logout">Kilépés</a></li>
+                        <li><a id="linkLogout"  href="/user/logout">Kilépés</a></li>
                         
                         {{else}}
                         <li><a href="/user/signin">Bejelentkezés</a></li>
