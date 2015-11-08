@@ -47,11 +47,11 @@ Recept szerkesztő:
     + (saját)recept törlése
         
 Operátor:
-
-    - felhasználók listázása
-    - felhasználók törlése
+- felhasználók listázása
+- felhasználók törlése
 
 ### Végpontok
+
 |------|-------------------|--------------------------------------------------|
 | GET  | /                 | főoldal, receptek listája                        |
 | GET  | /about            | leírás a használatról                            |
