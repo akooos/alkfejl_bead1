@@ -1,8 +1,8 @@
 /*
     Unit testing probe
-    Mocha, Chai...
+    Mocha, Chai..
 */
-
+process.env.NODE_ENV = 'test';
 var expect = require("chai").expect;
 //var should = require('chai').should();
 var Waterline = require('waterline');
@@ -23,8 +23,10 @@ before(function (done) {
     waterlineConfig.connections.default.adapter = 'memory';
 
     orm.initialize(waterlineConfig, function(err, models) {
-        if(err) 
+        if(err){ 
+               done();
             throw err;
+        }
         Users = models.collections.users;
      //   Recipes = models.collections.recipes;
         done();

@@ -24,7 +24,7 @@ Browser.localhost(ip , port);
 var browser = new Browser();
 
 describe('Recipe Editor Functional Testing', function(){
-    
+   this.timeout(30000);
    before(function(done){
        app.start(done);
    });
