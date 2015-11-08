@@ -1,18 +1,18 @@
 # Követelményanalízis
 
-  ## Funkcionális követelmények
+## Funkcionális követelmények
 
-    - Vendégként recepteket megtekinteni.
-    - Felhasználóként(Receptszerkesztő) szeretnék recepteket megosztani másokkal: Recept hozzáadás
-    - Felhasználóként szeretnék módosítani a receptjeimen: Recept módosítás
-    - Felhasználóként szeretnék recepteimből törölni.
-    - Operátorként szeretném a felhasználókat törölni, ha szükséges.
+- Vendégként recepteket megtekinteni.
+- Felhasználóként(Receptszerkesztő) szeretnék recepteket megosztani másokkal: Recept hozzáadás
+- Felhasználóként szeretnék módosítani a receptjeimen: Recept módosítás
+- Felhasználóként szeretnék recepteimből törölni.
+- Operátorként szeretném a felhasználókat törölni, ha szükséges.
 
-  ## Nem funkcionális követelmények
+## Nem funkcionális követelmények
 
-    - Felhasználóbarát ergonomikus elrendezés és kinézet
-    - Biztonságos működés: jelszavak tárolása, funkciókhoz való hozzáférés
-    - Gyors
+- Felhasználóbarát ergonomikus elrendezés és kinézet
+- Biztonságos működés: jelszavak tárolása, funkciókhoz való hozzáférés
+- Gyors
 
 ## Használatieset-modell
 
@@ -74,6 +74,7 @@ Operátor:
 ## Felhasználóifelület-modell
 
 ### Oldalvázlatok
+![alt text](RecipesList_Mockup.jpg "Receptek lista mockup")
 
 ### Designterv (nem kell, elég a végső megvalósítás kinézete)
 ![alt text](designterv.png "Végső megvalósítás kinézete")
