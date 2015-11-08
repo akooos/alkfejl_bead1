@@ -28,10 +28,6 @@
 
 # Tervezés
 
-## Architektúra terv
-
-### Komponensdiagram
-
 ### Oldaltérkép
 
 Publikus:
@@ -87,16 +83,16 @@ Operátor:
 
 ### Adatbázisterv
 ![alt text](Alkalmazások_fejlesztése_Beadandó(1)_ELTE_IK_15-16-1_Adatbázisterv.png "Adatbázisterv")
-### Állapotdiagram
 
-## Dinamikus működés
+### Állapotdiagram
+![alt text](Alkalmazások_fejlesztése_Beadandó(1)_ELTE_IK_15-16-1_StateMachineUserSession.png "Állapotdiagram")
 
 ### Szekvenciadiagram
 
 ![alt text](sd_login.png "Szekvencia diagram")
 
 # Implementáció
-
+![alt text](stm_usersession.png "Állapot diagram")
 ##Fejlesztői környezet bemutatása
 
 ###Könyvtárstruktúrában lévő mappák és fájlok funkiójának bemutatása:
