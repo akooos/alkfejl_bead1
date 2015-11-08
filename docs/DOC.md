@@ -51,7 +51,7 @@ Operátor:
 - felhasználók törlése
 
 ### Végpontok
-
+| Kérés| Útvonal           | Leírás                                           |
 |------|-------------------|--------------------------------------------------|
 | GET  | /                 | főoldal, receptek listája                        |
 | GET  | /about            | leírás a használatról                            |
