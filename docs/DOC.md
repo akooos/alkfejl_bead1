@@ -81,9 +81,10 @@ Operátor:
 ## Osztálymodell
 
 ### Adatmodell
+![alt text](Alkalmazások_fejlesztése_Beadandó(1)_ELTE_IK_15-16-1_DataModell.png "Adatmodell")
 
 ### Adatbázisterv
-
+![alt text](Alkalmazások_fejlesztése_Beadandó(1)_ELTE_IK_15-16-1_Adatbázisterv.png "Adatbázisterv")
 ### Állapotdiagram
 
 ## Dinamikus működés
