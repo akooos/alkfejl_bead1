@@ -25,6 +25,7 @@
 
 ## Folyamatok pontos menete:
 ![alt text](Alkalmazások_fejlesztése_Beadandó(1)_ELTE_IK_15-16-1_NewRecipeActivity.png "Használati esetek")
+
 # Tervezés
 
 ## Architektúra terv
@@ -91,6 +92,8 @@ Operátor:
 ## Dinamikus működés
 
 ### Szekvenciadiagram
+
+![alt text](sd_login.png "Szekvencia diagram")
 
 # Implementáció
 
@@ -198,6 +201,7 @@ Felhasználói modell tesztelése:
 - Chrome
 - Firefox
 - Internet Explorer 11 >
+- Opera
 - egyéb HTML5, CSS3 -at megjelenítő, Javascriptet futtató böngésző
 
 ##Telepítés lépései
