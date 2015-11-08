@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha ./tests/func.test.js",
+    "test": "node_modules/mocha/bin/mocha ./tests/*.test.js",
     "watch-test": "node_modules/mocha/bin/mocha --watch ./tests/*.test.js",
     "start": "node server.js"
   },

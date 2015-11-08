@@ -125,14 +125,47 @@ Operátor:
              
 # Tesztelés
 
-Automatikus tesztek szükségesek. Nem kell teljeskörű tesztelés, a hallgató mutassa meg, hogy képes ilyen tesztek írására.
+##Tesztelési környezet bemutatása
 
-Tesztelési környezet bemutatása
-Egységtesztek: legalább 1 adatmodell tesztelése
-Funkcionális felületi tesztek: legalább 1 folyamat tesztelése
-VAGY: Selenium IDE használatával
-VAGY: zombie.js használatával
-Tesztesetek felsorolása: milyen eseteket próbált végig a hallgató
+Teszteléshez a Mocha, Chai, Zombie modulok használhatóak.
+
+/tests/func.test.js : Funkcionális tesztek
+/tests/users.test.js : Felhasználói modell (egység) tesztek
+
+Az applikációnak egy külön (teszt)példánya indul el, illetve
+a szükséges adatbázis, a tesztelések előtt létrejön a memóriában.
+
+Indítás(package.json könyvátárból):
+npm run test
+
+##Egységtesztek: legalább 1 adatmodell tesztelése
+Felhasználói modell tesztelése: 
+- Új felhasználó létrehozása
+- Meglévő felhasználó adatainak változtatása
+- Meglévő felhasználó megkeresése
+
+Teszt kimenete:
+` UsersModel
+    ✓ should be able to create a user (547ms)
+    ✓ should be able to edit a user
+    ✓ should be able to find a user
+  3 passing (637ms)`
+  
+##Funkcionális felületi tesztek: legalább 1 folyamat tesztelése
+
+  1. Regisztráció
+  2. Kijelentkezés
+  3. Bejelentkezés
+  4. Új recept létrehozása
+  
+Teszt kimenete:
+`
+  ✓ Signup Test: should be redirected to ../recipes/list
+  ✓ Logout Test: should be redirected to ../
+  ✓ Signin Test: should be redirected to ../recipes/list
+  ✓ Recipe Add Test: should be redirected to ../recipes/list
+  4 passing (2s)
+`
 
 # Felhasználói dokumentáció
 
@@ -142,8 +175,9 @@ Server oldalon: NodeJS
 Kliens oldalon: Chrome; Firefox; Internet Explorer 11 >, illetve egyéb HTML5, CSS3 -at megjelenítő, Javascriptet futtató böngésző ;
 
 Telepítés lépései: hogyan kerül a Githubról a célgépre a program
+
 Linux-on
---------
+
 Következő csomagok(programok) szükségesek: nodejs
 
 cd /installation/path
