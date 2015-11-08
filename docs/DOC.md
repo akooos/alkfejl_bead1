@@ -51,6 +51,7 @@ Operátor:
 - felhasználók törlése
 
 ### Végpontok
+
 | Kérés| Útvonal           | Leírás                                           |
 |------|-------------------|--------------------------------------------------|
 | GET  | /                 | főoldal, receptek listája                        |
@@ -59,7 +60,7 @@ Operátor:
 | POST | /user/signin      | bejelentkezési adatok felküldése                 |
 | GET  | /user/signup      | regisztrációs oldal                              |
 | POST | /user/signup      | regisztrációs adatok felküldése                  |
-| GET  | /user/edit/:id    | felhasználói felület,felhasználó szerkesztése    |
+| GET  | /user/edit?id=    | felhasználói felület,felhasználó szerkesztése    |
 | GET  | /recipes/list     | saját receptek oldala                            |
 | GET  | /recipes/new      | új recept felvitele                              |
 | POST | /recipes/new      | új recept felvitele, adatok küldése              |
@@ -93,6 +94,7 @@ Operátor:
 
 ###Könyvtárstruktúrában lévő mappák és fájlok funkiójának bemutatása:
 
+| Útvonal                  | Leírás                                                                                        |
 |--------------------------|----------------------------------------------------------------------------------------|
 | /config                  | konfigurációs állományok helye, jelenleg a waterline ORM beállításai itt találhatóak   |
 | /controllers             | MVC paradigma alapján a vezérlések(controllers) ebben a mappában találhatóak meg       |
