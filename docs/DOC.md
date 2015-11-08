@@ -98,13 +98,13 @@ Operátor:
 |--------------------------|----------------------------------------------------------------------------------------|
 | /config                  | konfigurációs állományok helye, jelenleg a waterline ORM beállításai itt találhatóak   |
 | /controllers             | MVC paradigma alapján a vezérlések(controllers) ebben a mappában találhatóak meg       |
-                               - index főoldal vezérlője,                                                           
-                               - login:authentikációs folyamatok irányítása,                                        
-                               - recipes:receptekkel kapcsolatos folyamatok irányítása
+|                          |  - index főoldal vezérlője,                                                            | 
+|                          |  - login:authentikációs folyamatok irányítása,                                         | 
+|                          |  - recipes:receptekkel kapcsolatos folyamatok irányítása                               |
 | /docs                    | dokumentáció                                                                           |
 | /models                  | MVC paradigma alapján a modellek(models) ebben a mappában találhatóak meg              |
-                               - recipes : Receptek modellje                                                        
-                               - users   : Felhasználók modellje
+|                          |   - recipes : Receptek modellje                                                        |        
+|                          |   - users   : Felhasználók modellje                                                    |
 | /node_modules            | npm által installált modulok, amelyek kellenek az alkalmazás futtatásához              |
 | /public                  | Publikusan elérhető erőforrások(kép,videó,css,client-side-javascript,...stb)           |
 | /tests                   | Tesztesetek(Egység tesztek,Funkcionális tesztek)                                       |
