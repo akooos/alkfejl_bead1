@@ -98,7 +98,7 @@ describe('Recipe Editor Functional Testing', function(){
    
    });
    
-   describe('Recipe Add Test: User clicks \"New Recipe\" button',function(){
+   describe('Recipe Add Test: User clicks \"New Recipe\" link on menu',function(){
        before(function(){
            //assume we are logged in...
            return browser.clickLink('#linkNewRecipe');

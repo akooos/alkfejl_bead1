@@ -1,3 +1,6 @@
-# Alkalmazások fejlesztése 2015/16/1 ELTE IK
-## Feladat: Receptek és hozzávalók
-## Környezet: NodeJS, Bootstrap, JQuery...
+# Alkalmazások fejlesztése 2015/16/1 ELTE IK(Web application development homework)
+## Feladat: Receptek és hozzávalók(Recipes and ingredients)
+## Környezet: 
+- Server side: NodeJS; 
+- Client side: Bootstrap, JQuery...(Environment)
+
