@@ -139,37 +139,35 @@ Tesztesetek felsorolása: milyen eseteket próbált végig a hallgató
 A futtatáshoz ajánlott hardver-, szoftver konfiguráció: 
 Op. rendszer: Windows/Linux...(Linux ajánlot)
 Server oldalon: NodeJS
-Kliens oldalon: Chrome; Firefox; Internet Explorer >11;
+Kliens oldalon: Chrome; Firefox; Internet Explorer 11 >, illetve egyéb HTML5, CSS3 -at megjelenítő, Javascriptet futtató böngésző ;
 
 Telepítés lépései: hogyan kerül a Githubról a célgépre a program
 Linux-on
 --------
-Következő csomagok(programok) szükségesek: nodejs
-
-cd /installation/path
-git clone https://github.com/akooos/alkfejl_bead1.git
-
-npm install express –save
-npm install body-parser –save
-npm install hbs –save
-npm install express-validator –save
-npm install express-session –save
-npm install connect-flash –save{
-npm install express-session --save
-npm install waterline –save
-npm install sails-disk --save
-npm install sails-memory --save
-npm install passport --save
-npm install passport-local –save
-npm install bcryptjs --save
+1.  Következő csomagok(programok) szükségesek: nodejs
+2.  cd /installation/path
+3.  git clone https://github.com/akooos/alkfejl_bead1.git
+4.  npm install express –save
+5.  npm install body-parser –save
+6.  npm install hbs –save
+7.  npm install express-validator –save
+8.  npm install express-session –save
+9.  npm install connect-flash –save{
+10. npm install express-session --save
+11. npm install waterline –save
+12. npm install sails-disk --save
+13. npm install sails-memory --save
+14. npm install passport --save
+15. npm install passport-local –save
+16. npm install bcryptjs --save
 
 Opcionálisan:
-    - Nodemon: Lehetővé teszi hogy újraindítás(nodejs leállítás) nélkül, frissüljön a webes applikáció
-               npm install nodemon -g
-    - Teszteléshez: 
-               npm install chai --save-dev
-               npm install mocha --save-dev
-               npm install zombie --save-dev
+- Nodemon: Lehetővé teszi hogy újraindítás(nodejs leállítás) nélkül, frissüljön a webes applikáció
+    npm install nodemon -g
+- Teszteléshez: 
+    npm install chai --save-dev
+    npm install mocha --save-dev
+    npm install zombie --save-dev
 
 Szerver indítása:
 node index.js
