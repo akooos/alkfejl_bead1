@@ -180,16 +180,24 @@ Teszt kimenete:
 
 # Felhasználói dokumentáció
 
-A futtatáshoz ajánlott hardver-, szoftver konfiguráció: 
-Op. rendszer: Windows/Linux...(Linux ajánlot)
-Server oldalon: NodeJS
-Kliens oldalon: Chrome; Firefox; Internet Explorer 11 >, illetve egyéb HTML5, CSS3 -at megjelenítő, Javascriptet futtató böngésző ;
+## A futtatáshoz ajánlott hardver-, szoftver konfiguráció
 
-Telepítés lépései: hogyan kerül a Githubról a célgépre a program
+###Server oldalon: 
 
-Linux-on
+- Op. rendszer: Windows/Linux...(Linux ajánlot)
+- NodeJS
 
-Következő csomagok(programok) szükségesek: nodejs
+###Kliens oldalon: 
+- Chrome
+- Firefox
+- Internet Explorer 11 >
+- egyéb HTML5, CSS3 -at megjelenítő, Javascriptet futtató böngésző
+
+##Telepítés lépései: hogyan kerül a Githubról a célgépre a program
+
+###Linux-on
+
+####Következő csomagok(programok) szükségesek: nodejs
 
 cd /installation/path
 
@@ -221,7 +229,7 @@ npm install passport-local –save
 
 npm install bcryptjs --save
 
-Opcionálisan:
+####Opcionálisan:
 - Nodemon: Lehetővé teszi hogy újraindítás(nodejs leállítás) nélkül, frissüljön a webes applikáció
 
     npm install nodemon -g
@@ -235,10 +243,13 @@ Opcionálisan:
     npm install zombie --save-dev
     
 
-Szerver indítása:
+####Szerver indítása:
+
 node index.js
+
 vagy
+
 nodemon index.js
 
-A program használata
+## A program használata
 Az előbbiekben ajánlott böngésző valamelyikével a célgép címére kell navigálni.

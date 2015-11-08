@@ -2,5 +2,5 @@
 ## Feladat: Receptek és hozzávalók(Recipes and ingredients)
 ## Környezet: 
 - Server side: NodeJS; 
-- Client side: Bootstrap, JQuery...(Environment)
+- Client sidewget : Bootstrap, JQuery...(Environment)
 
