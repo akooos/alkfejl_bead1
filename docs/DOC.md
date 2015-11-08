@@ -130,13 +130,16 @@ Operátor:
 Teszteléshez a Mocha, Chai, Zombie modulok használhatóak.
 
 /tests/func.test.js : Funkcionális tesztek
+
 /tests/users.test.js : Felhasználói modell (egység) tesztek
 
 Az applikációnak egy külön (teszt)példánya indul el, illetve
 a szükséges adatbázis, a tesztelések előtt létrejön a memóriában.
 
 Indítás(package.json könyvátárból):
+
 npm run test
+
 
 ##Egységtesztek: legalább 1 adatmodell tesztelése
 Felhasználói modell tesztelése: 
@@ -144,7 +147,7 @@ Felhasználói modell tesztelése:
 - Meglévő felhasználó adatainak változtatása
 - Meglévő felhasználó megkeresése
 
-Teszt kimenete:
+###Teszt kimenete:
 
  UsersModel
 
@@ -164,7 +167,7 @@ Teszt kimenete:
   3. Bejelentkezés
   4. Új recept létrehozása
   
-Teszt kimenete:
+###Teszt kimenete:
 
   ✓ Signup Test: should be redirected to ../recipes/list
   
@@ -193,7 +196,7 @@ Teszt kimenete:
 - Internet Explorer 11 >
 - egyéb HTML5, CSS3 -at megjelenítő, Javascriptet futtató böngésző
 
-##Telepítés lépései: hogyan kerül a Githubról a célgépre a program
+##Telepítés lépései
 
 ###Linux-on
 
