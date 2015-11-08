@@ -1,0 +1,22 @@
+
+#edgeMargin: 5
+#direction: down
+#edges: hard
+#zoom: 0.7
+#gutter: 0
+#bendSize: 0
+#lineWidth: 1
+#arrowSize: 0.3
+#title: Alkalmazások fejlesztése Beadandó(1) ELTE IK 15/16/1 Új recept
+#leading: 3
+##spacing: 100
+[<label> Recept hozzáadása]
+[<start> Start] -> [<choice> Be van jelentkezve?]
+[<choice> Be van jelentkezve?] Nem-> [<state> Bejelentkezés]
+[<choice> Be van jelentkezve?] Igen-> [<state> Recept nevének megadása]
+[<state> Recept nevének megadása]->[<state> Recept leírásának megadása]
+[<state> Recept leírásának megadása]->[<state> Recept kép URL-jének megadaása]
+[<state> Recept kép URL-jének megadaása]->[<choice> Adatok megfelelőek?]
+[<choice> Adatok megfelelőek?] Nem-> [<state> Recept nevének megadása]
+[<choice> Adatok megfelelőek?] Igen-> [<state> Adatok mentése adatbázisba]
+[<state> Adatok mentése adatbázisba]->[<end> Kész]

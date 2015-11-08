@@ -1,0 +1,13 @@
+title:Bejelentkezés folyamata
+Vendég->>GUI:Bejelenzkezési adatok megadása
+GUI->>SessionManager:Felhasználó ellenőrzése(un,pw)
+SessionManager->UsersModel:checkUserExists(un,pw)
+UsersModel-->>SessionManager:userExists
+Note over SessionManager:Session indítása
+SessionManager-->>GUI:Átirányítás a "Recepteim" lapra
+GUI-->>Vendég:"Recepteim" lap renderelése
+Note over UsersModel: különben
+UsersModel-->>SessionManager:noSuchUser
+SessionManager-->>GUI:Helytelen adatok
+GUI-->>Vendég:"Bejelentlezési" lap renderelése(hiba üzenettel)
+ 

@@ -1,0 +1,17 @@
+
+#edgeMargin: 30
+#edges: rounded
+#zoom: 0.9
+#gutter: 0
+#bendSize: 0.05
+#lineWidth: 1.5
+#arrowSize: 0.4
+#title: Alkalmazások_fejlesztése_Beadandó(1)_ELTE_IK_15/16/1_CD_LoginController
+##leading: 0.1
+##padding: 20
+##spacing: 100
+[<class> LoginController|-passort:Object;-usr:Object|
+-initRoutes(router);-initActions(router);
++init(app,expres);+getUser():Object;+ensureAuthenticated();
++restrictTo();+setLocalsForLayout()]
+ 

@@ -1,0 +1,38 @@
+
+#edgeMargin: 30
+#edges: rounded
+#zoom: 0.9
+#gutter: 0
+#bendSize: 0.05
+#lineWidth: 1.5
+#arrowSize: 0.4
+#title: Alkalmazások_fejlesztése_Beadandó(1)_ELTE_IK_15/16/1_StateMachineUserSession
+#leading: 0.1
+#padding: 20
+#spacing: 100
+[<label> Felhasználói session]
+[<start>]
+[<state> Bejelentkezés]
+[<state> Regisztráció]
+[<state> Bejelentkezés folyamatban]
+[<state> Regisztráció folyamatban]
+[<state> Aktív felhasználói session]
+[<state> Új recept felvétele]
+[<state> Recept szerkesztése]
+[<state> Recept törlése]
+
+[<start>]->RecipeApp.start()[<state> Bejelentkezés]
+[<state> Bejelentkezés]->[<state> Bejelentkezés folyamatban]
+[<state> Bejelentkezés folyamatban]->Hiba[<state> Bejelentkezés]
+[<state> Bejelentkezés]->[<state> Regisztráció]
+[<state> Regisztráció]->[<state> Regisztráció folyamatban]
+[<state> Regisztráció folyamatban]->Hiba[<state> Regisztráció]
+[<state> Regisztráció folyamatban]->[<state> Bejelentkezés]
+[<state> Bejelentkezés folyamatban]->[<state> Aktív felhasználói session]
+[<state> Aktív felhasználói session]->Kijelentkezés[<state> Bejelentkezés]
+[<state> Aktív felhasználói session]->[<state> Recept törlése]
+[<state> Recept törlése]->[<state> Aktív felhasználói session]
+[<state> Aktív felhasználói session]->[<state> Recept szerkesztése]
+[<state> Recept szerkesztése]->[<state> Aktív felhasználói session]
+[<state> Aktív felhasználói session]->[<state> Új recept felvétele]
+[<state> Új recept felvétele]->[<state> Aktív felhasználói session] 

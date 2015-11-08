@@ -1,0 +1,17 @@
+
+#edgeMargin: 5
+#direction: down
+#edges: hard
+#zoom: 1
+#gutter: 0
+#bendSize: 0
+#lineWidth: 1
+#arrowSize: 1
+#title: Alkalmazások_fejlesztése_Beadandó(1)_ELTE_IK_15/16/1_Adatbázisterv
+##leading: 3
+##spacing: 100
+[<label> Adatbázisterv]
+[<class> User|pk_id:int;cre_dt:datetime;upd_dt:datetime;forename:string;surname:string;username:string;password:string;email:string;avatar:string;role:string]
+[<class> Recipe|pk_id:int;cre_dt:datetime;upd_dt:datetime;name:string;description:string;img:string]
+
+[<class> User]+-recipes *[<class> Recipe]

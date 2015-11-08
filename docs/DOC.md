@@ -77,7 +77,7 @@ Operátor:
 ![alt text](designterv.png "Végső megvalósítás kinézete")
 
 ## Osztálymodell
-
+![alt text](Alkalmazások_fejlesztése_Beadandó(1)_ELTE_IK_15-16-1_CD_LoginController.png "Felhasználói session vezérlő")
 ### Adatmodell
 ![alt text](Alkalmazások_fejlesztése_Beadandó(1)_ELTE_IK_15-16-1_DataModell.png "Adatmodell")
 
@@ -92,7 +92,7 @@ Operátor:
 ![alt text](sd_login.png "Szekvencia diagram")
 
 # Implementáció
-![alt text](stm_usersession.png "Állapot diagram")
+
 ##Fejlesztői környezet bemutatása
 
 ###Könyvtárstruktúrában lévő mappák és fájlok funkiójának bemutatása:
