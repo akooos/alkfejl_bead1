@@ -24,7 +24,7 @@
 ![alt text](Alkalmazások_fejlesztése_Beadandó(1)_ELTE_IK_15-16-1.png "Használati esetek")
 
 ## Folyamatok pontos menete:
-
+![alt text](Alkalmazások_fejlesztése_Beadandó(1)_ELTE_IK_15-16-1_NewRecipeActivity.png "Használati esetek")
 # Tervezés
 
 ## Architektúra terv
@@ -131,16 +131,16 @@ Operátor:
 
 Teszteléshez a Mocha, Chai, Zombie modulok használhatóak.
 
-/tests/func.test.js : Funkcionális tesztek
+`/tests/func.test.js` : Funkcionális tesztek
 
-/tests/users.test.js : Felhasználói modell (egység) tesztek
+`/tests/users.test.js` : Felhasználói modell (egység) tesztek
 
 Az applikációnak egy külön (teszt)példánya indul el, illetve
 a szükséges adatbázis, a tesztelések előtt létrejön a memóriában.
 
 Indítás(package.json könyvátárból):
 
-npm run test
+`npm run test`
 
 
 ##Egységtesztek: legalább 1 adatmodell tesztelése
@@ -202,59 +202,59 @@ Felhasználói modell tesztelése:
 
 ###Linux-on
 
-####Következő csomagok(programok) szükségesek: nodejs
+####Következő csomagok(programok) szükségesek: `nodejs`
 
-cd /installation/path
+`cd /installation/path`
 
-git clone https://github.com/akooos/alkfejl_bead1.git
+`git clone https://github.com/akooos/alkfejl_bead1.git`
 
-npm install express –save
+`npm install express –save`
 
-npm install body-parser –save
+`npm install body-parser –save`
 
-npm install hbs –save
+`npm install hbs –save`
 
-npm install express-validator –save
+`npm install express-validator –save`
 
-npm install express-session –save
+`npm install express-session –save`
 
-npm install connect-flash –save{
+`npm install connect-flash –save`
 
-npm install express-session --save
+`npm install express-session --save`
 
-npm install waterline –save
+`npm install waterline –save`
 
-npm install sails-disk --save
+`npm install sails-disk --save`
 
-npm install sails-memory --save
+`npm install sails-memory --save`
 
-npm install passport --save
+`npm install passport --save`
 
-npm install passport-local –save
+`npm install passport-local –save`
 
-npm install bcryptjs --save
+`npm install bcryptjs --save`
 
 ####Opcionálisan:
 - Nodemon: Lehetővé teszi hogy újraindítás(nodejs leállítás) nélkül, frissüljön a webes applikáció
 
-    npm install nodemon -g
+    `npm install nodemon -g`
     
 - Teszteléshez: 
 
-    npm install chai --save-dev
+    `npm install chai --save-dev`
 
-    npm install mocha --save-dev
+    `npm install mocha --save-dev`
     
-    npm install zombie --save-dev
+    `npm install zombie --save-dev`
     
 
 ####Szerver indítása:
 
-node index.js
+`node index.js`
 
 vagy
 
-nodemon index.js
+`nodemon index.js`
 
 ## A program használata
 Az előbbiekben ajánlott böngésző valamelyikével a célgép címére kell navigálni.
