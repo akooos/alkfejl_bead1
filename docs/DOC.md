@@ -145,11 +145,17 @@ Felhasználói modell tesztelése:
 - Meglévő felhasználó megkeresése
 
 Teszt kimenete:
-` UsersModel
+
+ UsersModel
+
     ✓ should be able to create a user (547ms)
+    
     ✓ should be able to edit a user
+    
     ✓ should be able to find a user
-  3 passing (637ms)`
+    
+  3 passing (637ms)
+  
   
 ##Funkcionális felületi tesztek: legalább 1 folyamat tesztelése
 
@@ -159,13 +165,18 @@ Teszt kimenete:
   4. Új recept létrehozása
   
 Teszt kimenete:
-`
+
   ✓ Signup Test: should be redirected to ../recipes/list
+  
   ✓ Logout Test: should be redirected to ../
+  
   ✓ Signin Test: should be redirected to ../recipes/list
+  
   ✓ Recipe Add Test: should be redirected to ../recipes/list
+  
   4 passing (2s)
-`
+  
+
 
 # Felhasználói dokumentáció
 
@@ -212,11 +223,17 @@ npm install bcryptjs --save
 
 Opcionálisan:
 - Nodemon: Lehetővé teszi hogy újraindítás(nodejs leállítás) nélkül, frissüljön a webes applikáció
+
     npm install nodemon -g
+    
 - Teszteléshez: 
+
     npm install chai --save-dev
+
     npm install mocha --save-dev
+    
     npm install zombie --save-dev
+    
 
 Szerver indítása:
 node index.js
