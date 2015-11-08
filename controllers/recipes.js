@@ -50,7 +50,7 @@ function RecipesController(){
                                             }
                                         ).then(function (oi) {
                                             //siker
-                                            console.log(oi);
+                                            console.log('Recipe edited!');
                                             res.redirect('/recipes/list');
                                         }).catch(function (err) {
                                             //hiba
@@ -88,7 +88,7 @@ function RecipesController(){
                                             }
                                         ).then(function (oi) {
                                             //siker
-                                            console.log(oi);
+                                            console.log('Recipe created:'+oi['name']);
                                             res.redirect('/recipes/list');
                                         }).catch(function (err) {
                                             //hiba

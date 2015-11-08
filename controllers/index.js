@@ -31,7 +31,7 @@ function IndexController(){
             res.render('about');
         });
         router.get('/*', function (req, res) {
-            console.log('IndexController:: Rendering 404...');
+            console.log('IndexController:: Rendering 404... because of ' + req.get('host') +req.originalUrl);
             res.render('404');
         });
     }

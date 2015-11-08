@@ -16,7 +16,7 @@ var Users;
 
 before(function (done) {
     // ORM indítása
-    var orm = new Waterline();
+    var orm = new Waterline();    
 
     orm.loadCollection(Waterline.Collection.extend(usersCollection));
     orm.loadCollection(Waterline.Collection.extend(recipesCollection));
@@ -27,10 +27,12 @@ before(function (done) {
                done();
             throw err;
         }
+        
         Users = models.collections.users;
      //   Recipes = models.collections.recipes;
         done();
     });
+    
 });
 
 describe('UsersModel', function () {

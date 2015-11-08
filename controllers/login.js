@@ -37,7 +37,7 @@ function LoginController(){
                     res.locals.isOperator = req.user.role == 'operator';
                 }else
                     res.locals.isOperator = false;
-                console.log('setLocalsForLayout req.isAuthenticated = ' + req.isAuthenticated());
+                //console.log('setLocalsForLayout req.isAuthenticated = ' + req.isAuthenticated());
                 next();
         };
         function initRoutes(router){
@@ -130,19 +130,19 @@ function LoginController(){
         function initActions(router){
                // Sorosítás a munkamenetbe
             passport.serializeUser(function(user, done) {
-                console.log('SERIALIZE');
+               // console.log('SERIALIZE');
                // console.log(user);
                 done(null, user );
-                console.log('END-------------' + ( new Date() ));
+               // console.log('END-------------' + ( new Date() ));
             });
     
             //Visszaállítás a munkamenetből
             passport.deserializeUser(function(obj, done) {
-                console.log('DESERILAIZE');
+               // console.log('DESERILAIZE');
                // console.log(obj);
                 done(null, obj);
                 user = obj;
-                console.log('END-------------' + ( new Date() ));
+               // console.log('END-------------' + ( new Date() ));
             });      
             
             var LocalStrategy = require('passport-local').Strategy;
@@ -156,7 +156,7 @@ function LoginController(){
                         },   
                         function(req, username, password, done) {
                             console.log('SIGNUP::USERNAME='+username);
-                            console.log('SIGNUP::Password='+password);
+                            //console.log('SIGNUP::Password='+password);
                             req.app.models.users.findOne({ username: username }, function(err, user) {
                                 if (err) { 
                                     console.log(err);
@@ -167,7 +167,8 @@ function LoginController(){
                                     return done(null, false, { messages: ['Létező felhasználó.'] });
                                 }
                                 req.app.models.users.create(req.body).then(function (user) {
-                                    console.log(user);
+                                    console.log('User created:'+user.username);
+                                   // console.log(user);
                                     return done(null, user);
                                 }).catch(function (err) {
                                     console.log("Local-signup-ERROR "+err);
@@ -189,7 +190,7 @@ function LoginController(){
                     },
                     function(req, username, password, done) {
                             console.log('SIGIN::USERNAME='+username);
-                            console.log('SIGNIN::Password='+password);
+                            //console.log('SIGNIN::Password='+password);
                             req.app.models.users.findOne({ username:username }, function(err, user) {
                             if (err) {
                                 console.log(err);
@@ -200,7 +201,7 @@ function LoginController(){
                                 req.flash('msgs','Helytelen adatok.');
                             return done(null, false,'Helytelen adatok.');
                         }
-                        console.log(user);
+                        console.log('SIGIN OK -> '+user.username);
                     return done(null, user);
                     });
                 }
