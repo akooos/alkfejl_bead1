@@ -47,26 +47,26 @@ Recept szerkesztő:
     + (saját)recept törlése
         
 Operátor:
-    + felhasználók listázása
-    + felhasználók törlése
+
+    - felhasználók listázása
+    - felhasználók törlése
 
 ### Végpontok
-
-GET /: főoldal: receptek listája
-GET /about: leírás a használatról
-GET /user/signin: bejelentkező oldal
-POST /user/signin: bejelentkezési adatok felküldése
-GET /user/signup: regisztrációs oldal
-POST /user/signup: regisztrációs adatok felküldése
-GET /user/edit/:id: felhasználói felület,felhasználó szerkesztése
-GET /recipes/list: saját receptek oldala
-GET /recipes/new: új recept felvitele
-POST /recipes/new: új recept felvitele, adatok küldése
-GET /recipes/edit/:id recept adatai szerkesztése
-GET /recipes/del/:id recept adatai törlése
-POST /recepies/:id/comment: új megjegyzés
-GET /user/list: operátor felület, felhasználó lista
-GET /user/del/:id: operátor felület,felhasználó törlése
+|------|-------------------|--------------------------------------------------|
+| GET  | /                 | főoldal, receptek listája                        |
+| GET  | /about            | leírás a használatról                            |
+| GET  | /user/signin      | bejelentkező oldal                               |
+| POST | /user/signin      | bejelentkezési adatok felküldése                 |
+| GET  | /user/signup      | regisztrációs oldal                              |
+| POST | /user/signup      | regisztrációs adatok felküldése                  |
+| GET  | /user/edit/:id    | felhasználói felület,felhasználó szerkesztése    |
+| GET  | /recipes/list     | saját receptek oldala                            |
+| GET  | /recipes/new      | új recept felvitele                              |
+| POST | /recipes/new      | új recept felvitele, adatok küldése              |
+| GET  | /recipes/edit?id= | recept adatai szerkesztése                       |
+| GET  | /recipes/del?id=  | recept adatai törlése                            |
+| GET  | /user/list        | operátor felület, felhasználó lista              |
+| GET  | /user/del?id=     | operátor felület,felhasználó törlése             |
 
 
 ## Felhasználóifelület-modell
@@ -89,34 +89,37 @@ GET /user/del/:id: operátor felület,felhasználó törlése
 
 # Implementáció
 
-Fejlesztői környezet bemutatása
-Könyvtárstruktúrában lévő mappák funkiójának bemutatása:
-/config                    : konfigurációs állományok helye, jelenleg a waterline ORM beállításai itt találhatóak
-/controllers               : MVC paradigma alapján a vezérlések(controllers) ebben a mappában találhatóak meg
-                               - index főoldal vezérlője,
-                               - login:authentikációs folyamatok irányítása,
+##Fejlesztői környezet bemutatása
+
+###Könyvtárstruktúrában lévő mappák és fájlok funkiójának bemutatása:
+
+|--------------------------|----------------------------------------------------------------------------------------|
+| /config                  | konfigurációs állományok helye, jelenleg a waterline ORM beállításai itt találhatóak   |
+| /controllers             | MVC paradigma alapján a vezérlések(controllers) ebben a mappában találhatóak meg       |
+                               - index főoldal vezérlője,                                                           
+                               - login:authentikációs folyamatok irányítása,                                        
                                - recipes:receptekkel kapcsolatos folyamatok irányítása
-/docs                      : dokumentáció
-/models                    : MVC paradigma alapján a modellek(models) ebben a mappában találhatóak meg
-                               - recipes : Receptek modellje
+| /docs                    | dokumentáció                                                                           |
+| /models                  | MVC paradigma alapján a modellek(models) ebben a mappában találhatóak meg              |
+                               - recipes : Receptek modellje                                                        
                                - users   : Felhasználók modellje
-/node_modules              : npm által installált modulok, amelyek kellenek az alkalmazás futtatásához
-/public                    : Publikusan elérhető erőforrások(kép,videó,css,client-side-javascript,...stb)
-/tests                     : Tesztesetek(Egység tesztek,Funkcionális tesztek)
-/views                     : MVC paradigma alapján a nézetek(views/felületek) ebben a mappában találhatóak meg
-/views/login/edit.hbs      : Felhasználó adatok szerkesztése felület
-/views/login/list.hbs      : Felhasználók listázása felület
-/views/login/signin.hbs    : Bejelentkezési felület
-/views/login/signup.hbs    : Regisztrációs felület
-/views/recipe/edit.hbs     : Recept adatok szerkesztése felület
-/views/recipe/list.hbs     : Receptek listázása felület
-/views/recipe/new.hbs      : Új recept felület
-/views/index.hbs           : Főoldal
-/views/about.hbs           : Súgó felület             
-/views/layout.hbs          : Applikáció fejléc, lábléc, menü 
-/views/404.hbs             : 404 hiba felület
-/index.js                  : nodejs kezdeti js file, éles rendszer indításának belépési pontja
-/recipeapp.js              : applikáció logika 
+| /node_modules            | npm által installált modulok, amelyek kellenek az alkalmazás futtatásához              |
+| /public                  | Publikusan elérhető erőforrások(kép,videó,css,client-side-javascript,...stb)           |
+| /tests                   | Tesztesetek(Egység tesztek,Funkcionális tesztek)                                       |
+| /views                   | MVC paradigma alapján a nézetek(views/felületek) ebben a mappában találhatóak meg      |
+| /views/login/edit.hbs    | Felhasználó adatok szerkesztése felület                                                |
+| /views/login/list.hbs    | Felhasználók listázása felület                                                         |
+| /views/login/signin.hbs  | Bejelentkezési felület                                                                 |
+| /views/login/signup.hbs  | Regisztrációs felület                                                                  |
+| /views/recipe/edit.hbs   | Recept adatok szerkesztése felület                                                     |
+| /views/recipe/list.hbs   | Receptek listázása felület                                                             |
+| /views/recipe/new.hbs    | Új recept felület                                                                      |
+| /views/index.hbs         | Főoldal                                                                                |
+| /views/about.hbs         | Súgó felület                                                                           |
+| /views/layout.hbs        | Applikáció fejléc, lábléc, menü                                                        |
+| /views/404.hbs           | 404 hiba felület                                                                       |
+| /index.js                | nodejs kezdeti js file, éles rendszer indításának belépési pontja                      |
+| /recipeapp.js            | applikáció logika                                                                      |
              
 # Tesztelés
 
