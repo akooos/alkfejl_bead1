@@ -21,6 +21,7 @@
 -  Operátor: Receptszerkesztő szerepkörén túl, törölheti bárkit.
 
 ## Használati eset diagramok:
+![alt text](Alkalmazások_fejlesztése_Beadandó(1)_ELTE_IK_15-16-1.png "Használati esetek")
 
 ## Folyamatok pontos menete:
 
