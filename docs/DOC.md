@@ -75,6 +75,7 @@ Operátor:
 ### Oldalvázlatok
 
 ### Designterv (nem kell, elég a végső megvalósítás kinézete)
+![alt text](designterv.png "Végső megvalósítás kinézete")
 
 ## Osztálymodell
 
